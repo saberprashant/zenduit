@@ -1,0 +1,55 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 40px;
+  height: 60px;
+  top: 0;
+  background: #2188D9;
+
+  .logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+
+  .navigators {
+    height: 100%;
+    .nav-btn {
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      background: #2188D9;
+      height: 100%;
+      border: none;
+      padding: 0 16px;
+      cursor: pointer;
+
+      &:active {
+        background-color: #1770b4;
+      }
+    }
+  }
+
+  .profile-actions {
+    display: flex;
+    gap: 20px;
+  }
+
+}
+
+.content {
+  display: block;
+  flex-grow: 1;
+  overflow-y: auto;
+}

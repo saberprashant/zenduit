@@ -1,0 +1,128 @@
+.submissions-container {
+  padding: 36px 40px;
+  height: 100%;
+  box-sizing: border-box;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #060C1B;
+  }
+
+  .actions-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+    width: 100%;
+
+    .left-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+
+      input {
+        width: 300px;
+        height: 30px;
+      }
+
+      select {
+        width: 200px;
+        height: 30px;
+      }
+    }
+
+    .right-section {
+      display: flex;
+      width: 15%;
+      justify-content: end;
+
+      .export {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .list-map-section {
+    display: flex;
+    gap: 20px;
+    padding-top: 36px;
+    width: 100%;
+    height: 100%;
+
+    .list-container {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      overflow-y: scroll;
+
+      .submission-card {
+        box-sizing: border-box;
+        padding: 16px;
+        border: 1px solid #B8B9BC;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f6f6f6;
+        }
+
+        &:nth-child(n+2) {
+          margin-top: 12px;
+        }
+
+        .title-status-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 140%;
+            color: #060C1B;
+          }
+
+          .status {
+            padding: 4px 8px;
+            border: 1px solid #B8B9BC;
+            border-radius: 4px;
+          }
+        }
+
+        .from, .to, .due-date {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 130%;
+          color: #B8B9BC;
+        }
+
+        .from, .to > span {
+          color: #060C1B;
+          font-weight: 400;
+        }
+
+        .due-date > span {
+          color: #FF3D00;
+        }
+      }
+    }
+
+    .gmap-container {
+      display: block;
+      flex: 1;
+      justify-content: stretch;
+    }
+  }
+}
+
+
+
+
+
